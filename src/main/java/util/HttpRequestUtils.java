@@ -17,8 +17,8 @@ public class HttpRequestUtils {
 			return Maps.newHashMap();
 		}
 		
-		String[] tokens = queryString.split("&");
-		return Arrays.stream(tokens)
+		String[] tokens = queryString.split("&"); 
+		return Arrays.stream(tokens) // ??
 					.map(t -> getKeyValue(t, "="))
 					.filter(p -> p != null)
 					.collect(Collectors.toMap(p -> p.getKey(), p -> p.getValue()));

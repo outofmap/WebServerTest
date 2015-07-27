@@ -12,7 +12,7 @@ public class WebServer {
 	
     public static void main(String argv[]) throws Exception {
         // 서버소켓을 생성한다. 웹서버는 기본적으로 8080번 포트를 사용한다.
-    	
+    	//소켓은 뭔가요? 
     	try (ServerSocket listenSocket = new ServerSocket(DEFAULT_PORT)) {
     		log.info("Web Application Server started {} port.", DEFAULT_PORT);
 
